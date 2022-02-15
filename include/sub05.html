@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <script type="text/javascript">
+        $(function() {
+            // 서브 페이지 네비 클릭이벤트 : 경로와 페이지 일치시 active활성화
+            var path = window.location.href;
+            // console.log('path :', path);
+            $('.subPage_nav .lnb>a').each(function() {
+                if (this.href === path) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="subPage_nav sub05">
+        <ul class="sub-navGroup">
+            <li class="gnb sub05 fz18 bg_point">JOB-Market</li>
+            <li class="lnb"><a href="sub05-01.html">Japan Career Market</a></li>
+            <li class="lnb"><a href="sub05-02.html">USA 취업 통계</a></li>
+            <li class="lnb"><a href="sub05-03.html">취업전략</a></li>
+            <li class="lnb"><a href="sub05-04.html">채용기업설명회</a></li>
+        </ul>
+    </div>
+</body>

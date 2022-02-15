@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soft Engineer Society</title>
+    <link rel="stylesheet" href="css/img-icon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_responsive.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div class="skip-navigation">
+        <!--웹접근성/content-->
+        <p><a class="goToMain" href="#main">콘텐츠 바로가기</a></p>
+    </div>
+
+    <!-- header-include -->
+    <? include 'include/header.html' ?>
+
+
+    <div class="container sub07" id="main">
+        <!-- sub07 나의강의실-include -->
+        <? include 'include/sub07.html' ?>
+
+        <div class="sub-content sub07 sub07-03">
+            <div class="page-locationWrap">
+                <ul class="page-location">
+                    <!--
+                    home 메인 / category menu 대분류 / division menu 중분류 / section menu 소분류
+                    -->
+                    <li class="img-icon home"><a href="index.html"></a></li>
+                    <li class="img-icon chevron-right"></li>
+                    <li class="category-menu"><a href="sub07-01-01.html">나의강의실</a></li>
+                    <li class="img-icon  chevron-right"></li>
+                    <li class="division-menu"><a href="sub07-03.html">마일리지</a></li>
+                    <!-- <li class="img-icon  chevron-right"></li>
+                    <li class="section-menu"><a href="sub07-01-03.html">학습종료</a></li> -->
+                </ul>
+                <div class="img-icon  chevron-right"></div>
+                <!-- <div class="sub-content sub00-01"></div> -->
+            </div>
+            <div class="header">
+                <div class="titleBar h3">마일리지 정보</div>
+                <!-- <h3 class="h3"></h3> -->
+            </div>
+            <div class="section sub07-03">
+                <div class="sub-section">
+                    <div class="titleBar-hdr">나의 마일리지 현황</div>
+                    <div class="sub-segment d-flex">
+                        <div class="my-mileageWrap d-flex">
+                            <div class="img-icon mileageImg"></div>
+                            <div class="my-mileage">
+                                <h5 class="h5 c999">사용가능</h5>
+                                <div class="h2 cMain">10,000</div>
+                            </div>
+                        </div>
+                        <div class="mileage-list">
+                            <ul class="class-list-title thead d-flex">
+                                <li class="c-table-num">No.</li>
+                                <li class="c-table-02">일시</li>
+                                <li class="c-table-name-w">내역</li>
+                                <li class="c-table-02">마일리지</li>
+                            </ul>
+                            <ul class="class-list-wrap">
+                                <li class="class-list d-flex">
+                                    <div class="c-table-num">1</div>
+                                    <div class="c-table-02">2019.07.31</div>
+                                    <div class="c-table-name-w">회원가입</div>
+                                    <div class="c-table-02 mile-plus cMain">+ 3,000</div>
+                                </li>
+                                <li class="class-list d-flex">
+                                    <div class="c-table-num">2</div>
+                                    <div class="c-table-02">2019.08.05</div>
+                                    <div class="c-table-name-w"><strong>과정신청</strong> 세상에서 가장 쉬운 영단어 Step 1</div>
+                                    <div class="c-table-02 mile-minus cDanger">- 2,000</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-section d-flex">
+                    <div class="titleBar-hdr">마일리지 적립/사용 정책</div>
+                    <div class="sub-segment c999">
+                        <ul>
+                            <li>1. 신규회원가입 <strong class="c333">+ 3,000 마일리지 적립</strong></li>
+                            <li>2. 교육과정 수강 결제 <strong class="c333">결제 금액의 2% 적립</strong></li>
+                            <!-- 2020-01-28 3번, 5번 정책 삭제 -->
+                            <!-- <li>3. 이벤트/온라인 설문참여 진행시 <strong class="c333">명시된 마일리지 적립</strong></li> -->
+                            <li>3. 수강후기 작성 <strong class="c333">+ 1,000 마일리지 적립</strong></li>
+                            <!-- <li>5. 로그인 <strong class="c333">+ 100 마일리지 적립</strong><span class="h5">(1일 1회 한정)</span></li> -->
+                            <h5 class="h5">적립된 마일리지는 <strong>최대 2년</strong>까지 사용 가능합니다.</h5>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer-include -->
+    <? include 'include/footer.html' ?>
+</body>
+
+</html>

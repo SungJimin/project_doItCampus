@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="ko">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- 홈페이지의 대략적인 설명 >> 검색 결과 제목 하단에 설명으로 노출 -->
+<meta name="description" content=디지털·AI, 외국어, 직무, 자격증까지! Let's Do it! Do it campus!">
+<!-- 홈페이지 키워드 >> 키워드 검색했을 때 검색결과로 노출 -->
+<meta name="keywords" content="디지털, AI, 빅데이터, 프로그래밍, 정보처리, 데이터베이스, 클라우드, 외국어, 영어, 일본어, 중국어, 직무, 경영, 사업전략, 리더십, 코칭, 마케팅, CS, 자기관리, 커뮤니케이션, 법정의무, 취업, 해외취업, Soft Engineer Society, SES, 소프트엔지니어소사이어티, SCIT, SWDO, E러닝, e-learning">
+<title>Let's Do it 두잇캠퍼스</title>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/common.css">
+<link rel="stylesheet" href="../css/img-icon.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/style_responsive.css">
+<link rel="stylesheet" href="../css/renewal_style.css">
+<script src="../js/jquery-3.3.1.min.js"></script>
+<script src="../js/renewal_script.js"></script>
+<script src="../js/common.js"></script>
+
+<body>
+
+    <div class="sub-content modal-content">
+        <div class="header d-flex justify_end">
+            <!-- classTitle 과정명 데이터 가져오기 -->
+            <!-- <div class="titleBar h3 classTitle">세상에서 가장 쉬운 영단어 Step1</div> -->
+            <div class="img-icon times close-modal"></div>
+        </div>
+        <div class="section section-margin modal-sub07-01 sub07-01 sub07-01-01">
+            <!-- 학습현황 탭 -->
+            <div class="class-tabMenu">
+                <ul class="modal-tabGroup tabGroup d-flex">
+                    <li class="active">학습현황</li>
+                    <li>학습하기</li>
+                    <li>온라인 과제</li>
+                    <li>온라인 시험</li>
+                    <li>공지사항</li>
+                    <li>자료실</li>
+                </ul>
+                <!-- 내용이 많아 스크롤이 필요할 경우 modal-ovflowY -->
+                <div class="modal-subGroup subGroup modal-ovflowY">
+                    <!-- 2020-03-25 학습현황 수정 -->
+                    <div class="tab-sub sub01 hideTab">
+
+                        <div class="statusWrap d-flex">
+                            <article class="chart">
+                                <ul class="floatL left">
+                                    <li></li>
+                                </ul>
+                                <ul class="floatL right">
+                                    <li></li>
+                                </ul>
+                                <div class="pannel">
+                                    <!-- .calStatus 학습한 차시에 계산식(전체학습일/실제학습일*100%) 도입 -->
+                                    <p class="fz34 fc_orD"><span class="calStatus">20</span></p>
+                                </div>
+                            </article>
+                            <div class="sub-sectionWrap">
+                                <div class="sub-section">
+                                    <div class="titleBar-hdr">학습진도현황</div>
+                                    <div class="sub-segment c666 learnTotal">
+                                        <strong class="classStatus cDanger">15</strong>/ 20
+                                    </div>
+                                </div>
+                                <div class="sub-section">
+                                    <div class="titleBar-hdr">학습기간</div>
+                                    <div class="sub-segment c666 learn">
+                                        <span class="cDanger">
+                                            학습종료<strong class="countDay">7일</strong>전 입니다.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="sub-section">
+                                    <div class="titleBar-hdr">복습기간</div>
+                                    <div class="sub-segment c666 recap">
+                                        2020.11.04 - 2020.11.03
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="completionWrap d-flex">
+                            <div class="completion">
+                                <div class="sub-section d-flex">
+                                    <div class="titleBar-hdr">수료조건</div>
+                                    <!-- .compltScore 수료 조건 점수 -->
+                                    <div class="sub-segment c666 completeTotal">총점 <stong class="compltScore">80</stong>점 이상</div>
+                                </div>
+                                <div class="graphWrap">
+                                    <ul class="graphGroup d-flex">
+                                        <li class="condition">진도율</li>
+                                        <li class="graph">
+                                            <!-- div.graph 점수 계산
+                                               width: calc((그래프너비 100% / 비중 배점) * 현재 점수); -->
+                                            <div class="graph graph1"></div>
+                                        </li>
+                                        <li class="scoreWrap progress">
+                                            <!-- .checkScore 현재 점수 / .condtnScore 수료조건 -->
+                                            <span class="checkScore">35</span>점 / <span class="condtnScore">50</span>점
+                                        </li>
+                                    </ul>
+                                    <ul class="graphGroup d-flex">
+                                        <li class="condition">시험</li>
+                                        <li class="graph">
+                                            <div class="graph graph2"></div>
+                                        </li>
+                                        <li class="scoreWrap exampro">
+                                            <span class="checkScore">10</span>점 /
+                                            <span class="conditionScore">20</span>점
+                                        </li>
+                                    </ul>
+                                    <ul class="graphGroup d-flex">
+                                        <li class="condition">과제</li>
+                                        <li class="graph">
+                                            <div class="graph graph3"></div>
+                                        </li>
+                                        <li class="scoreWrap workpro">
+                                            <span class="checkScore">-</span> / <span class="conditionScore">30</span>점</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="scoreSum">
+                                <div class="titleBar-hdr">점수합계</div>
+                                <div class="scoreWrap">
+                                    <div class="score">
+                                        <!-- .sumCondition 수료조건 점수 합계 -->
+                                        <div class="sumCondition fz34">45</div>
+                                        <!-- .totlaScore 총 점수 -->
+                                        <div class="totalScore"> / 100점</div>
+                                    </div>
+                                    <div class="showTxt">
+                                        <!-- 수료조건 충족시 .cMain show 나머지 hide
+                                                수료조건 미충족시 .cDanger show 나머지 hide -->
+                                        <div class="cDanger fc_false">수료 기준 미달</div>
+                                        <div class="cMain fc_true">수료 기준 달성</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2020-03-25 학습현황 수정 끝-->
+                    <div class="tab-sub sub02 hideTab">
+                        <div class="sub-section">
+                            <div class="sub-segment">
+                                <ul class="class-list-title thead d-flex">
+                                    <li class="c-table-num">차시</li>
+                                    <li class="c-table-name">차시명</li>
+                                    <li class="c-table-01">학습시간</li>
+                                    <!-- 2020-01-28 강사정보 삭제 <li class="c-table-02">강사</li> -->
+                                    <!-- 2020-01-28 <li class="c-table-01">출석</li> 출석 → 학습여부 변경  -->
+                                    <li class="c-table-01">학습여부</li>
+                                    <li class="c-table-01">강의보기</li>
+                                </ul>
+                                <ul class="class-list-wrap modal-ovflowY">
+                                    <!-- 과정명 추가시 list and(+) Wrap 추가  -->
+                                    <li class="class-list board-list d-flex">
+                                        <div class="c-table-num numberSt">1</div>
+                                        <div class="c-table-name text-over-lh20">미국인이 매일 쓰는 영단어 1위-10위</div>
+                                        <div class="c-table-01">32분</div>
+                                        <!-- <div class="c-table-02">지니쌤</div> -->
+                                        <div class="c-table-01">
+                                            <div class="img-icon attendanceY"></div>
+                                        </div>
+                                        <div class="c-table-01 c-table-btn">
+                                            <a href="#" class="btn_normal btn_medium btn_orangeD">
+                                                <!-- <div class="img-icon study"></div> -->
+                                                학습하기
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="class-list board-list d-flex">
+                                        <div class="c-table-num numberSt">2</div>
+                                        <div class="c-table-name text-over-lh20">미국인이 매일 쓰는 영단어 11위-20위</div>
+                                        <div class="c-table-01">32분</div>
+                                        <!-- <div class="c-table-02">지니쌤</div> -->
+                                        <div class="c-table-01">
+                                            <div class="img-icon attendanceY"></div>
+                                        </div>
+                                        <div class="c-table-01 c-table-btn">
+                                            <a href="#" class="btn_normal btn_medium btn_orangeD">
+                                                <!-- <div class="img-icon study"></div> -->
+                                                학습하기
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="class-list board-list d-flex">
+                                        <div class="c-table-num numberSt">3</div>
+                                        <div class="c-table-name text-over-lh20">미국인이 매일 쓰는 영단어 21위-30위</div>
+                                        <div class="c-table-01">32분</div>
+                                        <!-- <div class="c-table-02">지니쌤</div> -->
+                                        <div class="c-table-01">
+                                            <div class="img-icon attendanceY"></div>
+                                        </div>
+                                        <div class="c-table-01 c-table-btn">
+                                            <a href="#" class="btn_normal btn_medium btn_orangeD">
+                                                <!-- <div class="img-icon study"></div> -->
+                                                학습하기
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="class-list board-list d-flex">
+                                        <div class="c-table-num numberSt">4</div>
+                                        <div class="c-table-name text-over-lh20">미국인이 매일 쓰는 영단어 31위-40위</div>
+                                        <div class="c-table-01">32분</div>
+                                        <!-- <div class="c-table-02">지니쌤</div> -->
+                                        <div class="c-table-01">
+                                            <div class="img-icon attendanceY"></div>
+                                        </div>
+                                        <div class="c-table-01 c-table-btn">
+                                            <a href="#" class="btn_normal btn_medium btn_orangeD">
+                                                <!-- <div class="img-icon study"></div> -->
+                                                학습하기
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="class-list board-list d-flex">
+                                        <div class="c-table-num numberSt">5</div>
+                                        <div class="c-table-name text-over-lh20">미국인이 매일 쓰는 영단어 41위-50위</div>
+                                        <div class="c-table-01">32분</div>
+                                        <!-- <div class="c-table-02">지니쌤</div> -->
+                                        <div class="c-table-01">
+                                            <div class="img-icon attendanceY"></div>
+                                        </div>
+                                        <div class="c-table-01 c-table-btn">
+                                            <a href="#" class="btn_normal btn_medium btn_orangeD">
+                                                <!-- <div class="img-icon study"></div> -->
+                                                학습하기
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="class-list board-list d-flex">
+                                        <div class="c-table-num numberSt">6</div>
+                                        <div class="c-table-name text-over-lh20">미국인이 매일 쓰는 영단어 51위-60위</div>
+                                        <div class="c-table-01">32분</div>
+                                        <!-- <div class="c-table-02">지니쌤</div> -->
+                                        <div class="c-table-01">
+                                            <div class="img-icon attendanceN"></div>
+                                        </div>
+                                        <div class="c-table-01 c-table-btn">
+                                            <a href="#" class="btn_normal btn_medium btn_orangeD">
+                                                <!-- <div class="img-icon study"></div> -->
+                                                학습하기
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="class-list board-list d-flex">
+                                        <div class="c-table-num numberSt">7</div>
+                                        <div class="c-table-name text-over-lh20">미국인이 매일 쓰는 영단어 61위-70위</div>
+                                        <div class="c-table-01">32분</div>
+                                        <!-- <div class="c-table-02">지니쌤</div> -->
+                                        <div class="c-table-01">
+                                            <div class="img-icon attendanceN"></div>
+                                        </div>
+                                        <div class="c-table-01 c-table-btn">
+                                            <a href="#" class="btn_normal btn_medium btn_orangeD">
+                                                <!-- <div class="img-icon study"></div> -->
+                                                학습하기
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="class-list board-list d-flex">
+                                        <div class="c-table-num numberSt">8</div>
+                                        <div class="c-table-name text-over-lh20">미국인이 매일 쓰는 영단어 71위-80위</div>
+                                        <div class="c-table-01">32분</div>
+                                        <!-- <div class="c-table-02">지니쌤</div> -->
+                                        <div class="c-table-01">
+                                            <div class="img-icon attendanceN"></div>
+                                        </div>
+                                        <div class="c-table-01 c-table-btn">
+                                            <a href="#" class="btn_normal btn_medium btn_orangeD">
+                                                <!-- <div class="img-icon study"></div> -->
+                                                학습하기
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="class-list board-list d-flex">
+                                        <div class="c-table-num numberSt">9</div>
+                                        <div class="c-table-name text-over-lh20">미국인이 매일 쓰는 영단어 81위-90위</div>
+                                        <div class="c-table-01">32분</div>
+                                        <!-- <div class="c-table-02">지니쌤</div> -->
+                                        <div class="c-table-01">
+                                            <div class="img-icon attendanceN"></div>
+                                        </div>
+                                        <div class="c-table-01 c-table-btn">
+                                            <a href="#" class="btn_normal btn_medium btn_orangeD">
+                                                <!-- <div class="img-icon study"></div> -->
+                                                학습하기
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="class-list board-list d-flex">
+                                        <div class="c-table-num numberSt">10</div>
+                                        <div class="c-table-name text-over-lh20">미국인이 매일 쓰는 영단어 91위-100위</div>
+                                        <div class="c-table-01">32분</div>
+                                        <!-- <div class="c-table-02">지니쌤</div> -->
+                                        <div class="c-table-01">
+                                            <div class="img-icon attendanceN"></div>
+                                        </div>
+                                        <div class="c-table-01 c-table-btn">
+                                            <a href="#" class="btn_normal btn_medium btn_orangeD">
+                                                <!-- <div class="img-icon study"></div> -->
+                                                학습하기
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="surveyWrap">
+                                <div class="d-flex">
+                                    <div class="titleBar-hdr">학습평가 및 설문</div>
+                                    <div class="sub-segment">더 나은 서비스를 위해 의견을 제공해주세요. 당신의 소중한 시간 5분이 큰 힘이 됩니다.</div>
+                                </div>
+                                <div class="buttonWrapper d-flex">
+                                    <div class="button btn-subBlue1">
+                                        <a href="#" class="d-flex">
+                                            <div class="img-icon check-square"></div>
+                                            <h5 class="h5">만족도</h5>
+                                        </a>
+                                    </div>
+                                    <div class="button btn-subBlue2">
+                                        <a href="#" class="d-flex">
+                                            <div class="img-icon ballot-check"></div>
+                                            <h5 class="h5">학습평가</h5>
+                                        </a>
+                                    </div>
+                                    <div class="button btn-subBlue3">
+                                        <a href="#" class="d-flex">
+                                            <div class="img-icon edit"></div>
+                                            <h5 class="h5">수강 후기 작성</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-sub sub03 hideTab">
+                        <div class="sub-section modal-ovflowY">
+                            <div class="sub-segment">
+                                <ul class="class-list-title thead d-flex">
+                                    <li class="c-table-name">과제명</li>
+                                    <li class="c-table-02">과제기간</li>
+                                    <li class="c-table-num">제출여부</li>
+                                    <li class="c-table-num">과제점수</li>
+                                </ul>
+                                <ul class="class-list-wrap">
+                                    <!-- 2020-03-10 튜터의 피드백_과제평가 추가 -->
+                                    <li class="listAndwrap">
+                                        <div class="class-list board-list open-answer d-flex">
+                                            <div class="c-table-name text-over-lh20">
+                                                새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다.
+                                            </div>
+                                            <div class="c-table-02 c-table-date">2019.12.05 - 2020.01.05</div>
+                                            <div class="c-table-num cDanger">미제출</div>
+                                            <div class="c-table-num"><strong class="score">-</strong>/40</div>
+                                        </div>
+                                        <div class="open-asw open-ctt">
+                                            <ul class="class-list-wrap">
+                                                <li class="icon-align aswr-box">
+
+                                                    <div class="c999">과제<br>평가</div>
+                                                    <div class="text-over-lh20">
+                                                        새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다. 주는 사랑의 온갖 공자는 살 그것은 것이다.
+                                                        이상은 할지라도 천자만홍이 행복스럽고 만물은 길지 일월과 커다란 영원히 때문이다. 청춘의 길을 얼마나 이것이다.
+                                                        싹이 무엇이 오직 위하여서 황금시대를 속에서 원질이 황금시대의 있음으로써 것이다.
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="listAndwrap">
+                                        <div class="class-list board-list open-answer d-flex">
+                                            <div class="c-table-name text-over-lh20">
+                                                새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다.
+                                            </div>
+                                            <div class="c-table-02 c-table-date">2019.12.05 - 2020.01.05</div>
+                                            <div class="c-table-num cMain">제출</div>
+                                            <div class="c-table-num"><strong class="score">37</strong>/40</div>
+                                        </div>
+                                        <div class="open-asw open-ctt">
+                                            <ul class="class-list-wrap">
+                                                <li class="icon-align aswr-box d-flex">
+                                                    <div class="c999">과제<br>평가</div>
+                                                    <div class="text-over-lh20">
+                                                        새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다. 주는 사랑의 온갖 공자는 살 그것은 것이다.
+                                                        이상은 할지라도 천자만홍이 행복스럽고 만물은 길지 일월과 커다란 영원히 때문이다. 청춘의 길을 얼마나 이것이다.
+                                                        싹이 무엇이 오직 위하여서 황금시대를 속에서 원질이 황금시대의 있음으로써 것이다.
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- 2020-03-10 평가중 추가 -->
+                                    <li class="class-list board-list d-flex">
+                                        <div class="c-table-name text-over-lh20">
+                                            새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다.
+                                        </div>
+                                        <div class="c-table-02 c-table-date">2019.12.05 - 2020.01.05</div>
+                                        <div class="c-table-num c999">평가중</div>
+                                        <div class="c-table-num">-</div>
+                                    </li>
+                                    <!-- 2020-03-10 제출하기 추가 -->
+                                    <li class="listAndwrap">
+                                        <div class="class-list board-list open-answer d-flex">
+                                            <div class="c-table-name text-over-lh20">
+                                                새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다.
+                                            </div>
+                                            <div class="c-table-02 c-table-date">2019.12.05 - 2020.01.05</div>
+                                            <div class="c-table-num cMain">
+                                                <!-- a.btn-test 클래스 추가 -->
+                                                <a class="button btn-myClass btn-test">
+                                                    <span class="h5">제출하기</span>
+                                                </a>
+                                            </div>
+                                            <div class="c-table-num">-</div>
+                                        </div>
+                                        <div class="open-asw open-ctt">
+                                            <ul class="class-list-wrap">
+                                                <li class="icon-align aswr-box">
+                                                    <form class="testForm d-flex" method="post">
+                                                        <input type="file" name="" value="" class="fileC">
+                                                        <input type="submit" value="제출하기" class="submitBtn button btn-myClass">
+                                                    </form>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 2020-03-10 평가기준안내 삭제 -->
+                        </div>
+                    </div>
+                    <div class="tab-sub sub04">
+                        <div class="sub-section modal-ovflowY">
+                            <div class="sub-segment">
+                                <ul class="class-list-title thead d-flex">
+                                    <li class="c-table-name">시험명</li>
+                                    <li class="c-table-02">시험기간</li>
+                                    <li class="c-table-num">제출여부</li>
+                                    <li class="c-table-num">시험점수</li>
+                                </ul>
+                                <ul class="class-list-wrap">
+                                    <li class="listAndwrap">
+                                        <div class="class-list board-list open-answer d-flex">
+                                            <div class="c-table-name text-over-lh20">
+                                                새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다.
+                                                새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다.
+                                                새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다.
+                                            </div>
+                                            <div class="c-table-02 c-table-date">2019.12.05 - 2020.01.05</div>
+                                            <div class="c-table-num cDanger">미제출</div>
+                                            <div class="c-table-num"><strong class="score">-</strong>/40</div>
+                                        </div>
+                                        <div class="open-asw open-ctt">
+                                            <ul class="class-list-wrap">
+                                                <li class="aswr-box">
+                                                    <table class="table table_onlineTest">
+                                                        <!-- * 시험문제 번호 numberQ,
+                                                             * 시험 정답 answer_correct,
+                                                             * 사용자 답표기 answer_user
+
+                                                             1. 기존 객관식 보기 중 사용자가 체크한 항목은 answer_user 클래스 추가.
+                                                             2. 시험문제 정답은 answer_correct클래스 추가. -->
+
+                                                        <thead class="thead">
+                                                            <tr>
+                                                                <th colspan="27">객관식</th>
+                                                                <td colspan="3" class="fc_orD">
+                                                                    정답 표기 ○
+                                                                </td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="tbody">
+                                                            <tr> <!-- 5문제씩 반복 -->
+                                                                <th class="numberQ">1</th>
+                                                                <td class="answer_correct">1</td>
+                                                                <td>2</td>
+                                                                <td>3</td>
+                                                                <td>4</td>
+                                                                <td class="answer_user">5</td>
+                                                                <!-- 문제 -->
+                                                                <th class="numberQ">2</th>
+                                                                <td>1</td>
+                                                                <td>2</td>
+                                                                <td>3</td>
+                                                                <td class="answer_correct answer_user">4</td>
+                                                                <td>5</td>
+                                                                <!-- 문제 -->
+                                                                <th class="numberQ">3</th>
+                                                                <td>1</td>
+                                                                <td>2</td>
+                                                                <td>3</td>
+                                                                <td class="answer_correct">4</td>
+                                                                <td class="answer_user">5</td>
+                                                                <!-- 문제 -->
+                                                                <th class="numberQ">4</th>
+                                                                <td>1</td>
+                                                                <td>2</td>
+                                                                <td>3</td>
+                                                                <td class="answer_correct answer_user">4</td>
+                                                                <td>5</td>
+                                                                <!-- 문제 -->
+                                                                <th class="numberQ">5</th>
+                                                                <td>1</td>
+                                                                <td>2</td>
+                                                                <td>3</td>
+                                                                <td class="answer_correct">4</td>
+                                                                <td class="answer_user">5</td>
+                                                            </tr>
+                                                            <tr> <!-- 5문제씩 반복 -->
+                                                                <th class="numberQ">6</th>
+                                                                <td>1</td>
+                                                                <td>2</td>
+                                                                <td class="answer_correct answer_user">3</td>
+                                                                <td>4</td>
+                                                                <td>5</td>
+                                                                <!-- 문제 -->
+                                                                <th class="numberQ">7</th>
+                                                                <td class="answer_correct">1</td>
+                                                                <td>2</td>
+                                                                <td>3</td>
+                                                                <td>4</td>
+                                                                <td class="answer_user">5</td>
+                                                                <!-- 문제 -->
+                                                                <th class="numberQ">8</th>
+                                                                <td>1</td>
+                                                                <td class="answer_correct answer_user">2</td>
+                                                                <td>3</td>
+                                                                <td>4</td>
+                                                                <td>5</td>
+                                                                <!-- 문제 -->
+                                                                <th class="numberQ">9</th>
+                                                                <td class="answer_correct">1</td>
+                                                                <td class="answer_user">2</td>
+                                                                <td>3</td>
+                                                                <td>4</td>
+                                                                <td>5</td>
+                                                                <!-- 문제 -->
+                                                                <th class="numberQ">10</th>
+                                                                <td>1</td>
+                                                                <td>2</td>
+                                                                <td>3</td>
+                                                                <td class="answer_correct answer_user">4</td>
+                                                                <td>5</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="listAndwrap">
+                                        <div class="class-list board-list open-answer d-flex">
+                                            <div class="c-table-name text-over-lh20">
+                                                새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다.
+                                            </div>
+                                            <div class="c-table-02 c-table-date">2019.12.05 - 2020.01.05</div>
+                                            <div class="c-table-num cMain">제출</div>
+                                            <div class="c-table-num"><strong class="score">37</strong>/40</div>
+                                        </div>
+                                        <div class="open-asw open-ctt">
+                                            <ul class="class-list-wrap">
+                                                <li class="icon-align aswr-box d-flex">
+                                                    <div class="c999">채점<br>결과<br>확인</div>
+                                                    <div class="text-over-lh20">
+                                                        새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다. 주는 사랑의 온갖 공자는 살 그것은 것이다.
+                                                        이상은 할지라도 천자만홍이 행복스럽고 만물은 길지 일월과 커다란 영원히 때문이다. 청춘의 길을 얼마나 이것이다.
+                                                        싹이 무엇이 오직 위하여서 황금시대를 속에서 원질이 황금시대의 있음으로써 것이다.
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <!-- 2020-03-10 평가중 추가 -->
+                                    <li class="class-list board-list d-flex">
+                                        <div class="c-table-name text-over-lh20">
+                                            새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다.
+                                        </div>
+                                        <div class="c-table-02 c-table-date">2019.12.05 - 2020.01.05</div>
+                                        <div class="c-table-num c999">평가중</div>
+                                        <div class="c-table-num">-</div>
+                                    </li>
+                                    <!-- 2020-03-10 응시하기 추가 -->
+                                    <li class="class-list board-list open-answer d-flex">
+                                        <div class="c-table-name text-over-lh20">
+                                            새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다.
+                                        </div>
+                                        <div class="c-table-02 c-table-date">2019.12.05 - 2020.01.05</div>
+                                        <div class="c-table-num cMain">
+                                            <!-- a.btn-test 클래스 추가 -->
+                                            <a class="button btn-myClass btn-test" href="sub07-01-01-test.html" target="_blank">
+                                                <span class="h5">응시하기</span>
+                                            </a>
+                                        </div>
+                                        <div class="c-table-num">-</div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <!-- 2020-03-10 평가기준안내 삭제 -->
+                        </div>
+                    </div>
+                    <div class="tab-sub sub05 hideTab">
+                        <div class="sub-section">
+                            <div class="sub-segment">
+                                <ul class="class-list-title thead d-flex">
+                                    <li class="c-table-num">No.</li>
+                                    <li class="c-table-name-wide ">제목</li>
+                                    <li class="c-table-02">작성일</li>
+                                </ul>
+                                <ul class="class-list-wrap modal-ovflowY">
+                                    <!-- 과정명 추가시 list and(+) Wrap 추가  -->
+                                    <li class="listAndwrap">
+                                        <div class="class-list board-list board-list open-answer d-flex">
+                                            <div class="c-table-num">1</div>
+                                            <div class="c-table-name-wide ">
+                                                <div class="d-flex icon-align">
+                                                    <div class="img-icon bullhorn-s"></div>
+                                                    <p class="text-over-lh20">
+                                                        새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="c-table-02">2019.08.05</div>
+                                        </div>
+                                        <div class="open-asw open-ctt">
+                                            <ul class="class-list-wrap">
+                                                <li class="aswr-box">
+                                                    <div class="">
+                                                        새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다. 주는 사랑의 온갖 공자는 살 그것은 것이다.
+                                                        이상은 할지라도 천자만홍이 행복스럽고 만물은 길지 일월과 커다란 영원히 때문이다. 청춘의 길을 얼마나 이것이다.
+                                                        싹이 무엇이 오직 위하여서 황금시대를 속에서 원질이 황금시대의 있음으로써 것이다.
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="listAndwrap">
+                                        <div class="class-list board-list board-list open-answer d-flex">
+                                            <div class="c-table-num">2</div>
+                                            <div class="c-table-name-wide ">
+                                                <div class="d-flex icon-align">
+                                                    <div class="img-icon bullhorn-s"></div>
+                                                    <p class="text-over-lh20">
+                                                        새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="c-table-02">2019.08.05</div>
+                                        </div>
+                                        <div class="open-asw open-ctt">
+                                            <ul class="class-list-wrap">
+                                                <li class="aswr-box">
+                                                    <div class="">
+                                                        새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다. 주는 사랑의 온갖 공자는 살 그것은 것이다.
+                                                        이상은 할지라도 천자만홍이 행복스럽고 만물은 길지 일월과 커다란 영원히 때문이다. 청춘의 길을 얼마나 이것이다.
+                                                        싹이 무엇이 오직 위하여서 황금시대를 속에서 원질이 황금시대의 있음으로써 것이다.
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="listAndwrap">
+                                        <div class="class-list board-list board-list open-answer d-flex">
+                                            <div class="c-table-num">3</div>
+                                            <div class="c-table-name-wide ">
+                                                <div class="d-flex icon-align">
+                                                    <div class="img-icon bullhorn-s"></div>
+                                                    <p class="text-over-lh20">
+                                                        새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="c-table-02">2019.08.05</div>
+                                        </div>
+                                        <div class="open-asw open-ctt">
+                                            <ul class="class-list-wrap">
+                                                <li class="aswr-box">
+                                                    <img src="../img/myClass-noticeImg.png" alt="공지사항 이미지" width="100%">
+                                                    <div class="">
+                                                        새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다. 주는 사랑의 온갖 공자는 살 그것은 것이다.
+                                                        이상은 할지라도 천자만홍이 행복스럽고 만물은 길지 일월과 커다란 영원히 때문이다. 청춘의 길을 얼마나 이것이다.
+                                                        싹이 무엇이 오직 위하여서 황금시대를 속에서 원질이 황금시대의 있음으로써 것이다.
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-sub sub06 hideTab">
+                        <div class="sub-section">
+                            <div class="sub-segment">
+                                <ul class="class-list-title thead d-flex">
+                                    <li class="c-table-num">No.</li>
+                                    <li class="c-table-name-wide ">제목</li>
+                                    <li class="c-table-01">첨부파일</li>
+                                    <li class="c-table-02">작성일</li>
+                                </ul>
+                                <ul class="class-list-wrap modal-ovflowY">
+                                    <!-- 과정명 추가시 list and(+) Wrap 추가  -->
+                                    <li class="listAndwrap">
+                                        <div class="class-list board-list board-list open-answer d-flex">
+                                            <div class="c-table-num">1</div>
+                                            <div class="c-table-name-wide  text-over-lh20">
+                                                새가 인간은 사랑의 않는 뿐이다.
+                                            </div>
+                                            <div class="c-table-01">
+                                                <a href="#">
+                                                    <div class="img-icon save"></div>
+                                                </a>
+                                            </div>
+                                            <div class="c-table-02">2019.08.05</div>
+                                        </div>
+                                        <div class="open-asw open-ctt">
+                                            <ul class="class-list-wrap">
+                                                <li class="aswr-box">
+                                                    <!-- img size 860 * 200 -->
+                                                    <img src="../img/myClass-noticeImg.png" alt="공지사항 이미지" width="100%">
+                                                    <div class="">
+                                                        새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다. 주는 사랑의 온갖 공자는 살 그것은 것이다.
+                                                        이상은 할지라도 천자만홍이 행복스럽고 만물은 길지 일월과 커다란 영원히 때문이다. 청춘의 길을 얼마나 이것이다.
+                                                        싹이 무엇이 오직 위하여서 황금시대를 속에서 원질이 황금시대의 있음으로써 것이다.
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="listAndwrap">
+                                        <div class="class-list board-list board-list open-answer d-flex">
+                                            <div class="c-table-num">2</div>
+                                            <div class="c-table-name-wide  text-over-lh20">
+                                                새가 인간은 사랑의 않는 뿐이다. 새가 인간은 사랑의 않는 뿐이다.새가 인간은 사랑의 않는 뿐이다.새가 인간은 사랑의 않는 뿐이다.
+                                            </div>
+                                            <div class="c-table-01">
+                                                <a href="#">
+                                                    <div class="img-icon save"></div>
+                                                </a>
+                                            </div>
+                                            <div class="c-table-02">2019.08.05</div>
+                                        </div>
+                                        <div class="open-asw open-ctt">
+                                            <ul class="class-list-wrap">
+                                                <li class="aswr-box">
+                                                    <div class="">
+                                                        새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다. 주는 사랑의 온갖 공자는 살 그것은 것이다.
+                                                        이상은 할지라도 천자만홍이 행복스럽고 만물은 길지 일월과 커다란 영원히 때문이다. 청춘의 길을 얼마나 이것이다.
+                                                        싹이 무엇이 오직 위하여서 황금시대를 속에서 원질이 황금시대의 있음으로써 것이다.
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="listAndwrap">
+                                        <div class="class-list board-list board-list open-answer d-flex">
+                                            <div class="c-table-num">3</div>
+                                            <div class="c-table-name-wide  text-over-lh20">
+                                                새가 인간은 사랑의 않는 뿐이다.새가 인간은 사랑의 않는 뿐이다.새가 인간은 사랑의 않는 뿐이다.새가 인간은 사랑의 않는 뿐이다.새가 인간은 사랑의 않는 뿐이다.
+                                            </div>
+                                            <div class="c-table-01">
+                                                <a href="#">
+                                                    <div class="img-icon save"></div>
+                                                </a>
+                                            </div>
+                                            <div class="c-table-02">2019.08.05</div>
+                                        </div>
+                                        <div class="open-asw open-ctt">
+                                            <ul class="class-list-wrap">
+                                                <li class="aswr-box">
+                                                    <div class="">
+                                                        새가 인간은 사랑의 않는 뿐이다. 얼음이 밝은 웅대한 뿐이다. 주는 사랑의 온갖 공자는 살 그것은 것이다.
+                                                        이상은 할지라도 천자만홍이 행복스럽고 만물은 길지 일월과 커다란 영원히 때문이다. 청춘의 길을 얼마나 이것이다.
+                                                        싹이 무엇이 오직 위하여서 황금시대를 속에서 원질이 황금시대의 있음으로써 것이다.
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="button-wrap d-flex">
+            <button class="button btn-myClass" type="button">학습시작</button>
+        </div> -->
+    </div>
+
+</body>
+
+</html>

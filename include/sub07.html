@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <script type="text/javascript">
+        $(function() {
+            // 서브 페이지 네비 클릭이벤트 : 경로와 페이지 일치시 active활성화
+            var path = window.location.href;
+            // console.log('path :', path);
+            $('.subPage_nav .lnb>a').each(function() {
+                if (this.href === path) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="subPage_nav sub07">
+        <ul class="sub-navGroup">
+            <li class="gnb sub07 fz18 bg_point">고객센터</li>
+            <li class="lnb"><a href="sub07-01.html">고객지원</a></li>
+            <li class="lnb"><a href="sub07-02.html">FAQ</a></li>
+            <li class="lnb"><a href="sub07-03.html">단체/제휴문의</a></li>
+            <li class="lnb"><a href="sub07-04.html">오시는길</a></li>
+        </ul>
+    </div>
+</body>

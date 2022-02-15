@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soft Engineer Society</title>
+    <link rel="stylesheet" href="css/img-icon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_responsive.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div class="container sub07 sub07-testWrapper" id="main">
+        <div class="header test-header d-flex">
+            <div class="titleWrap">
+                <div class="fz18 testTitle">시험 이름 입력</div>
+                <div class="infoWrap d-flex">
+                    <div class="testInfo">
+                        <strong>응시일&nbsp;</strong>
+                        <span class="today" id="today">
+                            <!-- #today 하단부 script --></span>
+                    </div>
+                    <div class="testInfo">
+                        <strong>문항수&nbsp;</strong>
+                        <span class="num">30</span>문항
+                    </div>
+                </div>
+            </div>
+            <div class="timerWrap">
+                <div class="d-flex icon-align">
+                    <div class="img-icon clock"></div>
+                    <p>시험시간</p>
+                </div>
+                <div class="test-timer h2" id="timer"></div>
+            </div>
+        </div>
+        <div class="section sub07-01 sub07-01-01-test">
+            <form action="" class="testForm" method="post">
+                <div class="testSet">
+                    <label class="testQ" for="text-answer">
+                        <div class="qWrap d-flex">
+                            <div class="qNumber">문제 17</div>
+                            <div class="qScore c666"><span class="score">4.5</span>점</div>
+                        </div>
+                        <div class="question">
+                            전인 피어나기 창공에 부패뿐이다. 밝은 스며들어 그들은 생생하며, 같이 그것은 품었기 있는 피다. 별과 그들의 것은 불어 것이다. 만물은 그들의 방지하는 피가 열락의 석가는 용기가 끓는다. 되는 품었기 넣는 때에, 그들을 아니다. 주며, 싶이 품고 사막이다.
+                        </div>
+                    </label>
+                    <textarea class="aBox" name="answer" rows="10" style="resize:none; width:99%;" id="text-answer"></textarea>
+                </div>
+                <div class="testSet">
+                    <div class="testQ">
+                        <div class="qWrap d-flex">
+                            <div class="qNumber">문제 20</div>
+                            <div class="qScore c666"><span class="score">3</span>점</div>
+                        </div>
+                        <div class="question">
+                            전인 피어나기 창공에 부패뿐이다. 밝은 스며들어 그들은 생생하며, 같이 그것은 품었기 있는 피다. 별과 그들의 것은 불어 것이다. 만물은 그들의 방지하는 피가 열락의 석가는 용기가 끓는다. 되는 품었기 넣는 때에, 그들을 아니다?
+                        </div>
+                    </div>
+                    <div class="testA">
+                        <div class="aWrap">
+                            <div class="answer d-flex">
+                                <input type="radio" class="input" name="answerA" id="testA1">
+                                <label for="testA1">
+                                    1. 전인 피어나기 창공에 부패뿐이다. 밝은 스며들어 그들은 생생하며, 같이 그것은 품었기 있는 피다.
+                                </label>
+                            </div>
+                            <div class="answer d-flex">
+                                <input type="radio" class="input" name="answerA" id="testA2">
+                                <label for="testA2">
+                                    2. 전인 피어나기 창공에 부패뿐이다. 밝은 스며들어 그들은 생생하며, 같이 그것은 품었기 있는 피다. 만물은 그들의 방지하는 피가 열락의 석가는 용기가 끓는다. 되는 품었기 넣는 때에, 그들을 아니다. 주며, 싶이 품고 사막이다.
+                                </label>
+                            </div>
+                            <div class="answer d-flex">
+                                <input type="radio" class="input" name="answerA" id="testA3">
+                                <label for="testA3">
+                                    3. 전인 피어나기 창공에 부패뿐이다. 밝은 스며들어 그들은 생생하며, 같이 그것은 품었기 있는 피다.
+                                </label>
+                            </div>
+                            <div class="answer d-flex">
+                                <input type="radio" class="input" name="answerA" id="testA4">
+                                <label for="testA4">
+                                    4. 전인 피어나기 창공에 부패뿐이다. 밝은 스며들어 그들은 생생하며, 같이 그것은 품었기 있는 피다.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testSet">
+                    <div class="testQ">
+                        <div class="qWrap d-flex">
+                            <div class="qNumber">문제 30</div>
+                            <div class="qScore c666"><span class="score">3</span>점</div>
+                        </div>
+                        <div class="question">
+                            전인 피어나기 창공에 부패뿐이다. 밝은 스며들어 그들은 생생하며, 같이 그것은 품었기 있는 피다. 별과 그들의 것은 불어 것이다. 만물은 그들의 방지하는 피가 열락의 석가는 용기가 끓는다. 되는 품었기 넣는 때에, 그들을 아니다?
+                        </div>
+                    </div>
+                    <div class="testA">
+                        <div class="aWrap">
+                            <div class="answer d-flex">
+                                <input type="radio" class="input" name="answerB" id="testB1">
+                                <label for="testB1">
+                                    1. 전인 피어나기 창공에 부패뿐이다. 밝은 스며들어 그들은 생생하며, 같이 그것은 품었기 있는 피다.
+                                </label>
+                            </div>
+                            <div class="answer d-flex">
+                                <input type="radio" class="input" name="answerB" id="testB2">
+                                <label for="testB2">
+                                    2. 전인 피어나기 창공에 부패뿐이다. 밝은 스며들어 그들은 생생하며, 같이 그것은 품었기 있는 피다. 만물은 그들의 방지하는 피가 열락의 석가는 용기가 끓는다. 되는 품었기 넣는 때에, 그들을 아니다. 주며, 싶이 품고 사막이다.
+                                </label>
+                            </div>
+                            <div class="answer d-flex">
+                                <input type="radio" class="input" name="answerB" id="testB3">
+                                <label for="testB3">
+                                    3. 전인 피어나기 창공에 부패뿐이다. 밝은 스며들어 그들은 생생하며, 같이 그것은 품었기 있는 피다.
+                                </label>
+                            </div>
+                            <div class="answer d-flex">
+                                <input type="radio" class="input" name="answerB" id="testB4">
+                                <label for="testB4">
+                                    4. 전인 피어나기 창공에 부패뿐이다. 밝은 스며들어 그들은 생생하며, 같이 그것은 품었기 있는 피다.
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="submit" value="제출하기" class="submitBtn button btn-myClass">
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+                    //오늘 날짜 구하기 https://zero-gravity.tistory.com/308
+                    function getRecentDate() {
+                        var dt = new Date();
+                        var recentYear = dt.getFullYear();
+                        var recentMonth = dt.getMonth() + 1;
+                        var recentDay = dt.getDate();
+
+                        if (recentMonth < 10) recentMonth = "0" + recentMonth;
+                        if (recentDay < 10) recentDay = "0" + recentDay;
+
+                        return recentYear + "년 " + recentMonth + "월 " + recentDay + "일 ";
+                    }
+                    $('#today').text(getRecentDate);
+                    //오늘 날짜 구하기 끝
+
+                    //타이머
+                    var time = 60; //기준시간 작성
+                    var min = ""; //분
+                    var sec = ""; //초
+
+                    //setInterval(함수, 시간) : 주기적인 실행
+                    var x = setInterval(function() {
+                        //parseInt() : 정수를 반환
+                        min = parseInt(time / 60); //몫을 계산
+                        sec = time % 60; //나머지를 계산
+
+                        document.getElementById("timer").innerHTML = min + ":" + sec;
+                        time--;
+
+                        //타임아웃 시
+                        if (time < 0) {
+                            clearInterval(x); //setInterval() 실행을 끝냄
+                            document.getElementById("timer").innerHTML = "시간초과";
+                            alert("시험 시간이 초과되어 답안지가 자동으로 제출됩니다.");
+                            //답안지 제출되어야합니다!!
+                        }
+                    }, 1000);
+                    //타이머 끝
+
+                    //제출하기 버튼
+                    $(".submitBtn").click(function() {
+                        var confirmSubmit = confirm("제출하시겠습니까?");
+                        if (confirmSubmit == true) {
+                            alert("제출 완료되었습니다.");
+                        } else {
+                            return false;
+                        }
+                    });
+                    //제출하기 버튼 끝
+
+                });
+    </script>
+</body>
+
+</html>

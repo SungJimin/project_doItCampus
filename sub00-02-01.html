@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 홈페이지의 대략적인 설명 >> 검색 결과 제목 하단에 설명으로 노출 -->
+    <meta name="description" content=디지털·AI, 외국어, 직무, 자격증까지! Let's Do it! Do it campus!">
+    <!-- 홈페이지 키워드 >> 키워드 검색했을 때 검색결과로 노출 -->
+    <meta name="keywords" content="디지털, AI, 빅데이터, 프로그래밍, 정보처리, 데이터베이스, 클라우드, 외국어, 영어, 일본어, 중국어, 직무, 경영, 사업전략, 리더십, 코칭, 마케팅, CS, 자기관리, 커뮤니케이션, 법정의무, 취업, 해외취업, Soft Engineer Society, SES, 소프트엔지니어소사이어티, SCIT, SWDO, E러닝, e-learning">
+    <title>Let's Do it 두잇캠퍼스</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/img-icon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_responsive.css">
+    <link rel="stylesheet" href="css/renewal_style.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/renewal_script.js"></script>
+</head>
+
+<body>
+    <!-- Header include -->
+    <? include 'include/header_sub.html' ?>
+
+    <!-- container -->
+    <div class="container subPage_container sub00 d-flex">
+        <? include 'include/sub00.html' ?>
+
+        <div class="subPage_content sub-content sub00-02 margin-left20" id="main">
+            <!-- 회원가입단계 표기 -->
+            <ul class="processWrap d-flex">
+                <li class="process"><span class="margin-right10 h5 fc_orD">01</span>약관확인</li>
+                <li class="process active"><span class="margin-right10 h5 fc_orD">02</span>정보입력</li>
+                <li class="process"><span class="margin-right10 h5 fc_orD">03</span>가입완료</li>
+            </ul>
+            <div class="section sub00-02-01">
+                <acrticle class="signUp-inputInfo">
+                    <header class="article-title d-flex">
+                        <div class="titleBar-hdr h4">정보입력</div>
+                        <p class="fc_666">
+                            * 표시가 된 곳은 필수 입력항목입니다.
+                        </p>
+                    </header>
+                </acrticle>
+                <!-- 2) 회원가입 - 2단계) 정보입력 -->
+                <form action="" class="formStyle" method="post">
+                    <!-- .retrieve : 저장된 데이터 불러오기 -->
+                    <div class="d-flex">
+                        <label class="label" for="user-name">* 성명</label>
+                        <div clss="retrieve user-name">구자욱</div>
+                    </div>
+                    <div class="d-flex">
+                        <label class="label" for="user-sex">* 성별</label>
+                        <div clss="retrieve user-sex">남자</div>
+                    </div>
+                    <div class="d-flex">
+                        <label class="label" for="user-birth">* 생년월일</label>
+                        <div clss="retrieve user-birth">YYYY-MM-DD</div>
+                        <!-- 생년월일 입력 삭제 : 데이터 (19-12-09)
+                        <input class="input user-birth" type="number" pattern="[0-9]*" name="user-birth" placeholder="YYYY-MM-DD" autocomplete="off">
+                        <select class="margin-left10 select" id="" name="user-birth2">
+                            <option value="양력" selected>양력</option>
+                            <option value="음력">음력</option>
+                        </select> -->
+                    </div>
+                    <div class="d-flex">
+                        <label class="label" for="userId">* 아이디</label>
+                        <div class="userID">
+                            <input class="input" type="text" id="" name="userId" maxlength="12" value="" autocomplete="off">
+                            <button class="btn_normal input-btn  btn_orangeD" type="button" onclick="location.href=''">중복확인</button>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <label class="label mh80" for="userPw">* 비밀번호</label>
+                        <input class="input" type="password" id="" name="userPw" maxlength="20" autocomplete="off">
+                    </div>
+                    <div class="d-flex">
+                        <label class="label mh80" for="userPwCheck">* 비밀번호확인</label>
+                        <div class="userPwCheck">
+                            <input class="input" type="password" id="" name="userPwCheck" maxlength="20" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <label class="label" for="email01">* 이메일</label>
+                        <div class="email">
+                            <input class="input email01" type="text" name="email01" autocomplete="off">
+                            <span>&nbsp;@&nbsp;</span>
+                            <input class="input email02" type="text" name="email02" autocomplete="off">
+                            <!-- 이메일 option 클릭시 email02에 값 입력되는 것 알아보기 -->
+                            <select class="select margin-left10 email01" name="email01">
+                                <option value="직접입력" selected>직접입력</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <label class="label" for="work-school">직장/학교명</label>
+                        <input class="input work-school" type="text" name="work-school" autocomplete="off">
+                    </div>
+                    <div class="d-flex">
+                        <label class="label" for="phone">자택(회사)번호</label>
+                        <div class="phone">
+                            <select class="select phone1" name="phone1">
+                                <option value="선택" selected>선택</option>
+                                <option value="02">02</option>
+                                <option value="031">031</option>
+                                <option value="032">032</option>
+                                <option value="033">033</option>
+                                <option value="041">041</option>
+                                <option value="042">042</option>
+                                <option value="043">043</option>
+                                <option value="044">044</option>
+                                <option value="051">051</option>
+                                <option value="052">052</option>
+                                <option value="053">053</option>
+                                <option value="054">054</option>
+                                <option value="055">055</option>
+                                <option value="061">061</option>
+                                <option value="062">062</option>
+                                <option value="063">063</option>
+                                <option value="064">064</option>
+                                <!-- 인터넷전화(070) / 평생전화(050) -->
+                                <option value="070">070</option>
+                                <option value="050">050</option>
+                            </select>
+                            <span>&nbsp;-&nbsp;</span>
+                            <input class="input phone2 w100" name="phone2" type="number" pattern="[0-9]*" value="" maxlength="4" autocomplete="off">
+                            <span>&nbsp;-&nbsp;</span>
+                            <input class="input phone3 w100" name="phone3" type="number" pattern="[0-9]*" value="" maxlength="4" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <label class="label" for="mbile-phone">* 휴대전화</label>
+                        <div class="phone mobile-phone">
+                            <select class="select mobile-phone1" name="mobile-phone1">
+                                <option value="선택" selected>선택</option>
+                                <option value="010">010</option>
+                                <option value="011">011</option>
+                                <option value="016">016</option>
+                                <option value="017">017</option>
+                                <option value="019">019</option>
+                            </select>
+                            <span>&nbsp;-&nbsp;</span>
+                            <input class="input mobile-phone2 w100" name="mobile-phone2" type="number" pattern="[0-9]*" value="" maxlength="4" autocomplete="off">
+                            <span>&nbsp;-&nbsp;</span>
+                            <input class="input mobile-phone3 w100" name="mobile-phone3" type="number" pattern="[0-9]*" value="" maxlength="4" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <label class="label" for="adress">* 주소</label>
+                        <div class="adressWrap">
+                            <div class="adress adress1 d-flex">
+                                <input class="input w355" type="text" name="adress" value="" autocomplete="off">
+                                <button class="btn_normal input-btn btn_orangeD" type="button" onclick="location.href=''">우편번호 검색</button>
+                            </div>
+                            <div class="adress adress2">
+                                <input class="input w355" type="text" name="adress" value="" autocomplete="off">
+                            </div>
+                            <div class="adress adress3">
+                                <input class="input w355" type="text" name="adress" value="" placeholder="상세주소" autocomplete="off">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="button-wrap d-flex margin-top40">
+                    <button class="btn-normal btn_medium btn_default btn-next" type="button" onclick="location.href='sub00-02.html'">이전</button>
+                    <button class="btn-normal btn_medium btn_orangeD btn-next" type="button" onclick="location.href='sub00-02-02.html'">가입신청</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer-include -->
+    <? include 'include/footer.html' ?>
+
+</body>
+
+</html>

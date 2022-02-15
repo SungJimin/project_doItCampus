@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soft Engineer Society</title>
+    <link rel="stylesheet" href="css/img-icon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_responsive.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div class="skip-navigation">
+        <!--웹접근성/content-->
+        <p><a class="goToMain" href="#main">콘텐츠 바로가기</a></p>
+    </div>
+
+    <!-- header-include -->
+    <? include 'include/header.html' ?>
+
+
+    <div class="container sub07" id="main">
+        <!-- sub07 나의강의실-include -->
+        <? include 'include/sub07.html' ?>
+
+        <div class="sub-content sub07 sub07-02">
+            <div class="page-locationWrap">
+                <ul class="page-location">
+                    <!--
+                    home 메인 / category menu 대분류 / division menu 중분류 / section menu 소분류
+                    -->
+                    <li class="img-icon home"><a href="index.html"></a></li>
+                    <li class="img-icon chevron-right"></li>
+                    <li class="category-menu"><a href="sub07-01-01.html">나의강의실</a></li>
+                    <li class="img-icon  chevron-right"></li>
+                    <li class="division-menu"><a href="sub07-02.html">결제현황/환불</a></li>
+                    <!-- <li class="img-icon  chevron-right"></li>
+                    <li class="section-menu"><a href="sub07-01-03.html">학습종료</a></li> -->
+                </ul>
+                <div class="img-icon  chevron-right"></div>
+                <!-- <div class="sub-content sub00-01"></div> -->
+            </div>
+            <div class="header">
+                <div class="titleBar h3">결제현황/환불</div>
+                <!-- <h3 class="h3"></h3> -->
+            </div>
+            <div class="section sub07-02">
+                <div class="sub-segment">
+                    <ul class="class-list-title thead d-flex">
+                        <li class="c-table-num">No.</li>
+                        <li class="c-table-03">과정명</li>
+                        <li class="c-table-num">기수</li>
+                        <li class="c-table-01">교육비</li>
+                        <li class="c-table-01">할인금액</li>
+                        <li class="c-table-01">결제금액</li>
+                        <li class="c-table-01">결제방식</li>
+                        <li class="c-table-num">결제상태</li>
+                        <li class="c-table-01">환불</li>
+                        <li class="c-table-num">영수증</li>
+                    </ul>
+                    <ul class="class-list-wrap">
+                        <!-- 과정명 추가시 list and(+) Wrap 추가  -->
+                        <!-- 결제 완료(payment-complete)시 환불(refund-Y)가능 -->
+                        <!-- 결제 대기(payment-wait)시 환불(refund-N)불가 -->
+                        <!-- 환불 완료시 (refund-complete) -->
+                        <li class="class-list d-flex">
+                            <div class="c-table-num numberSt">1</div>
+                            <div class="c-table-03 text-over-lh20">세상에서 가장 쉬운 영단어 Step 1 세상에서 가장 쉬운 영단어 Step 1</div>
+                            <!-- 2020-01-28 기수 표기 : 2기 → 2 수정 -->
+                            <div class="c-table-num">2</div>
+                            <div class="c-table-01">100,000</div>
+                            <div class="c-table-01">5,000</div>
+                            <div class="c-table-01">95,000</div>
+                            <div class="c-table-01">신용카드</div>
+                            <div class="c-table-num payment-complete">완료</div>
+                            <div class="c-table-01"><a href="#" class="refundBox refund-Y">환불</a></div>
+                            <div class="c-table-num print-icon modal-popup">
+                                <div class="img-icon print"></div>
+                                <h5 class="h5">출력</h5>
+                            </div>
+                        </li>
+                        <!-- 결제 완료(payment-complete)시 환불(refund-Y)가능 -->
+                        <!-- 결제 대기(payment-wait)시 환불(refund-N)불가 -->
+                        <!-- 환불 완료시 (refund-complete) -->
+                        <li class="class-list d-flex">
+                            <div class="c-table-num numberSt">2</div>
+                            <div class="c-table-03 text-over-lh20">세상에서 가장 쉬운 영단어 Step 2</div>
+                            <div class="c-table-num">1</div>
+                            <div class="c-table-01">100,000</div>
+                            <div class="c-table-01">5,000</div>
+                            <div class="c-table-01">95,000</div>
+                            <div class="c-table-01">가상계좌</div>
+                            <div class="c-table-num payment-complete">완료</div>
+                            <div class="c-table-01">
+                                <div class="refundBox refund-complete">완료</div>
+                            </div>
+                            <div class="c-table-num print-icon modal-popup">
+                                <div class="img-icon print"></div>
+                                <h5 class="h5">출력</h5>
+                            </div>
+                        </li>
+                        <!-- 결제 완료(payment-complete)시 환불(refund-Y)가능 -->
+                        <!-- 결제 대기(payment-wait)시 환불(refund-N)불가 -->
+                        <!-- 환불 완료시 (refund-complete) -->
+                        <li class="class-list d-flex">
+                            <div class="c-table-num numberSt">3</div>
+                            <div class="c-table-03 text-over-lh20">세상에서 가장 쉬운 영단어 Step 3</div>
+                            <div class="c-table-num">1</div>
+                            <div class="c-table-01">100,000</div>
+                            <div class="c-table-01">5,000</div>
+                            <div class="c-table-01">95,000</div>
+                            <div class="c-table-01">가상계좌</div>
+                            <div class="c-table-num payment-wait">대기</div>
+                            <div class="c-table-01"><a href="#" class="refundBox refund-N">불가</a></div>
+                            <div class="c-table-num print-icon modal-popup">
+                                <div class="img-icon print"></div>
+                                <h5 class="h5">출력</h5>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-layer"></div>
+        <div class="modal-content printReceipt">
+            <!-- 19.11.21 myClass라는 클래스가 추가되었습니다. -->
+            <!-- modal 수강신청 1단계 include -->
+            <? include 'include/modal-sub07-02.html' ?>
+        </div>
+    </div>
+    <!-- footer-include -->
+    <? include 'include/footer.html' ?>
+</body>
+
+</html>

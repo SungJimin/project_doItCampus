@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <script type="text/javascript">
+        $(function() {
+            // 서브 페이지 네비 클릭이벤트 : 경로와 페이지 일치시 active활성화
+            var path = window.location.href;
+            // console.log('path :', path);
+            $('.subPage_nav .lnb>a').each(function() {
+                if (this.href === path) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="subPage_nav sub04">
+        <ul class="sub-navGroup">
+            <li class="gnb sub04 fz18 bg_point">자격증</li>
+            <li class="lnb"><a href="sub04-01.html">정보처리기사</a></li>
+            <li class="lnb"><a href="sub04-02.html">JLPT</a></li>
+            <li class="lnb"><a href="sub04-03.html">JPT</a></li>
+            <li class="lnb"><a href="sub04-04.html">토익</a></li>
+            <li class="lnb"><a href="sub04-05.html">토플</a></li>
+        </ul>
+    </div>
+</body>

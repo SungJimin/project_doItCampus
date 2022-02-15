@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soft Engineer Society</title>
+    <link rel="stylesheet" href="css/img-icon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_responsive.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div class="skip-navigation">
+        <!--웹접근성/content-->
+        <p><a class="goToMain" href="#main">콘텐츠 바로가기</a></p>
+    </div>
+
+    <!-- header-include -->
+    <? include 'include/header.html' ?>
+
+
+    <div class="container sub07" id="main">
+        <!-- sub07 나의강의실-include -->
+        <? include 'include/sub07.html' ?>
+
+        <div class="sub-content sub07 sub07-01">
+            <!-- 현재 페이지 위치 표시 -->
+            <div class="page-locationWrap">
+                <ul class="page-location">
+                    <!--
+                    home 메인 / category menu 대분류 / division menu 중분류 / section menu 소분류
+                    -->
+                    <li class="img-icon  home"><a href="index.html"></a></li>
+                    <li class="img-icon  chevron-right"></li>
+                    <li class="category-menu"><a href="sub07-01-01.html">나의강의실</a></li>
+                    <li class="img-icon  chevron-right"></li>
+                    <li class="division-menu"><a href="sub07-01-01.html">학습현황</a></li>
+                    <li class="img-icon  chevron-right"></li>
+                    <li class="section-menu"><a href="sub07-01-01.html">학습중</a></li>
+                </ul>
+                <div class="img-icon  chevron-right"></div>
+                <!-- <div class="sub-content sub00-01"></div> -->
+            </div>
+            <div class="header">
+                <div class="titleBar h3">학습현황</div>
+                <!-- <h3 class="h3"></h3> -->
+            </div>
+            <div class="section sub07-01 sub07-01-01">
+
+                <!-- 학습현황 탭 -->
+                <div class="class-tabMenu">
+                    <ul class="tabGroup d-flex">
+                        <li class="active">학습 중</li>
+                        <li>학습 예정</li>
+                        <li>학습 종료</li>
+                    </ul>
+                    <div class="subGroup">
+                        <div class="tab-sub sub01">
+                            <div class="sub-section">
+                                <div class="sub-segment">
+                                    <ul class="class-list-title thead d-flex">
+                                        <li class="c-table-num">No.</li>
+                                        <li class="c-table-name">과정명</li>
+                                        <li class="c-table-num">기수</li>
+                                        <li class="c-table-03">학습기간</li>
+                                        <li class="c-table-01"></li>
+                                    </ul>
+                                    <ul class="class-list-wrap">
+                                        <!-- 과정명 추가시 class-list 추가  -->
+                                        <li class="class-list d-flex">
+                                            <div class="c-table-num">1</div>
+                                            <div class="c-table-name">세상에서 가장 쉬운 영단어 Step 1</div>
+                                            <div class="c-table-num">1기</div>
+                                            <div class="c-table-03">2019.08.05 - 2019.09.04</div>
+                                            <div class="c-table-01 c-table-btn">
+                                                <a class="button btn-myClass classRoom modal-popup"><span class="h5">강의실</span></a>
+                                            </div>
+                                        </li>
+                                        <li class="class-list d-flex">
+                                            <div class="c-table-num">2</div>
+                                            <div class="c-table-name">세상에서 가장 쉬운 영단어 Step 2</div>
+                                            <div class="c-table-num">1기</div>
+                                            <div class="c-table-03">2019.08.05 - 2019.09.04</div>
+                                            <div class="c-table-01 c-table-btn">
+                                                <a class="button btn-myClass classRoom modal-popup"><span class="h5">강의실</span></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-sub sub02 hideTab">
+                            <div class="sub-section">
+                                <div class="sub-segment">
+                                    <ul class="class-list-title thead d-flex">
+                                        <li class="c-table-num">No.</li>
+                                        <li class="c-table-name">과정명</li>
+                                        <li class="c-table-num">기수</li>
+                                        <li class="c-table-04">학습기간</li>
+                                    </ul>
+                                    <ul class="class-list-wrap">
+                                        <!-- 과정명 추가시 list and(+) Wrap 추가  -->
+                                        <li class="class-list d-flex">
+                                            <div class="c-table-num">1</div>
+                                            <div class="c-table-name">세상에서 가장 쉬운 영단어 Step 1</div>
+                                            <div class="c-table-num">1기</div>
+                                            <div class="c-table-04">2019.08.05 - 2019.09.04</div>
+                                        </li>
+                                        <li class="class-list d-flex">
+                                            <div class="c-table-num">1</div>
+                                            <div class="c-table-name">세상에서 가장 쉬운 영단어 Step 2</div>
+                                            <div class="c-table-num">1기</div>
+                                            <div class="c-table-04">2019.08.05 - 2019.09.04</div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-sub sub03 hideTab">
+                            <div class="sub-section">
+                                <div class="sub-segment">
+                                    <ul class="class-list-title thead d-flex">
+                                        <li class="c-table-num">No.</li>
+                                        <li class="c-table-name">과정명</li>
+                                        <li class="c-table-num">기수</li>
+                                        <li class="c-table-02">복습기간</li>
+                                        <li class="c-table-01">수료여부</li>
+                                        <li class="c-table-01"></li>
+                                    </ul>
+                                    <ul class="class-list-wrap">
+                                        <!-- 과정명 추가시 class-list 추가  -->
+                                        <li class="class-list d-flex">
+                                            <div class="c-table-num">1</div>
+                                            <div class="c-table-name">세상에서 가장 쉬운 영단어 Step 1</div>
+                                            <div class="c-table-num">1기</div>
+                                            <div class="c-table-02">2019.08.05 - 2019.09.04</div>
+                                            <div class="c-table-01 c-table-btn">
+                                                <a href="#" class="button btn-not">
+                                                    <span class="h5">미수료</span>
+                                                </a>
+                                            </div>
+                                            <div class="c-table-01 c-table-btn">
+                                                <a href="#" class="button btn-myClass classRoom"><span class="h5">복습하기</span></a>
+                                            </div>
+                                        </li>
+                                        <li class="class-list d-flex">
+                                            <div class="c-table-num">2</div>
+                                            <div class="c-table-name">세상에서 가장 쉬운 영단어 Step 2</div>
+                                            <div class="c-table-num">1기</div>
+                                            <div class="c-table-02">2019.08.05 - 2019.09.04</div>
+                                            <div class="c-table-01 c-table-btn">
+                                                <a href="#" class="button btn-certificate"><span class="h5">수료증</span></a>
+                                            </div>
+                                            <div class="c-table-01 c-table-btn">
+                                                <a href="#" class="button btn-not2">
+                                                    <span class="h5">기간만료</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-layer"></div>
+        <div class="modal-content myClass">
+            <!-- 19.11.21 myClass라는 클래스가 추가되었습니다. -->
+            <!-- modal 수강신청 1단계 include -->
+            <? include 'include/modal-sub07-01-01.html' ?>
+        </div>
+    </div>
+    <!-- footer-include -->
+    <? include 'include/footer.html' ?>
+</body>
+
+</html>

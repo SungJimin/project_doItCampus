@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <script type="text/javascript">
+        $(function() {
+            // 서브 페이지 네비 클릭이벤트 : 경로와 페이지 일치시 active활성화
+            var path = window.location.href;
+            // console.log('path :', path);
+            $('.subPage_nav .lnb>a').each(function() {
+                if (this.href === path) {
+                    $(this).addClass('active');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="subPage_nav sub03">
+        <ul class="sub-navGroup">
+            <li class="gnb sub03 fz18 bg_point">직무</li>
+            <li class="lnb"><a href="sub03-01.html">경영/사업전략</a></li>
+            <li class="lnb"><a href="sub03-02.html">리더십/코칭</a></li>
+            <li class="lnb"><a href="sub03-03.html">마케팅/CS</a></li>
+            <li class="lnb"><a href="sub03-04.html">자기관리/커뮤니케이션</a></li>
+            <li class="lnb"><a href="sub03-05.html">법정의무</a></li>
+        </ul>
+    </div>
+</body>

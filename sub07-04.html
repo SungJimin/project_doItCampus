@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soft Engineer Society</title>
+    <link rel="stylesheet" href="css/img-icon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_responsive.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/common.js"></script>
+</head>
+
+<body>
+    <div class="skip-navigation">
+        <!--웹접근성/content-->
+        <p><a class="goToMain" href="#main">콘텐츠 바로가기</a></p>
+    </div>
+
+    <!-- header-include -->
+    <? include 'include/header.html' ?>
+
+
+    <div class="container sub07" id="main">
+        <!-- sub07 나의강의실-include -->
+        <? include 'include/sub07.html' ?>
+
+        <div class="sub-content sub07 sub07-04">
+            <div class="page-locationWrap">
+                <ul class="page-location">
+                    <!--
+                    home 메인 / category menu 대분류 / division menu 중분류 / section menu 소분류
+                    -->
+                    <li class="img-icon home"><a href="index.html"></a></li>
+                    <li class="img-icon chevron-right"></li>
+                    <li class="category-menu"><a href="sub07-01.html">나의강의실</a></li>
+                    <li class="img-icon  chevron-right"></li>
+                    <li class="division-menu"><a href="sub07-04.html">개인정보 수정</a></li>
+                    <!-- <li class="img-icon  chevron-right"></li>
+                    <li class="section-menu"><a href="sub07-01-03.html">학습종료</a></li> -->
+                </ul>
+                <div class="img-icon  chevron-right"></div>
+                <!-- <div class="sub-content sub00-01"></div> -->
+            </div>
+            <div class="header">
+                <div class="titleBar h3">개인정보 수정</div>
+                <!-- <h3 class="h3"></h3> -->
+            </div>
+            <div class="section userInfo sub07-04">
+                <div class="header">
+                    <h5 class="fz16">비밀번호 재확인이 필요합니다.</h5>
+                </div>
+                <div class="enterWrap">
+                    <form class="form formStyle" id="" action="" method="post">
+                        <input class="input" name="userPw" type="password" placeholder="비밀번호">
+                        <!-- <a href="#"><input type="button" class="blue-btn button" value="확인"></a> -->
+                        <input type="button" class="btn-pColor button next-step input" value="확인">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer-include -->
+    <? include 'include/footer.html' ?>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            // 다음단계 버튼 클릭
+            $('.next-step').click(function() {
+                $('.section').load('include/sub07-04-01.html');
+            });
+        });
+    </script>
+</body>
+
+</html>
