@@ -20,7 +20,9 @@
     <link rel="stylesheet" href="css/renewal_style.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/renewal_script.js"></script>
+    
 </head>
 
 <body>
@@ -29,11 +31,10 @@
         <p><a class="goToMain" href="#main">콘텐츠 바로가기</a></p>
     </div>
     <!-- Header-include -->
-    <? include 'include/header_main.html' ?>
+    <!-- <? include 'include/header_main.html' ?> -->
+    <div class="load-html" data-source="include/header_main.html"></div>
 
     <div class="content" id="main">
-
-
         <!-- 03. 분야별 추천 강좌 -->
         <div class=" recommend-class">
             <div class="swiper-container field-wrap field01">
@@ -544,7 +545,8 @@
         </div>
 
         <!-- footer-include -->
-        <? include 'include/footer.html' ?>
+        <!-- <? include 'include/footer.html' ?> -->
+        <div class="load-html" data-source="include/footer.html"></div>
 
 </body>
 

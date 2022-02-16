@@ -193,6 +193,7 @@
 .btn-not2 {
     background-color: #666;
     color: #fff;
+    border: 1px solid #666;
 }
 
 .btn-pColor {
@@ -270,44 +271,6 @@
     font-weight: bold;
 }
 
-/* 3.6 color */
-.cMain,
-.true-msg {
-    color: #2c67b0;
-}
-
-.cDanger,
-.false-msg {
-    color: #c13831;
-}
-
-.c999 {
-    color: #999;
-}
-
-.c666 {
-    color: #666;
-}
-
-.c333 {
-    color: #333;
-}
-
-.cccc {
-    color: #ccc;
-}
-
-.bgcCCC {
-    background-color: #ccc;
-}
-
-.bgcEEE {
-    background-color: #eee;
-}
-
-.bgcF9 {
-    background-color: #f9f9f9;
-}
 
 /* 3.7 ETC function */
 /* - modal popup layer 활성화시 바디 스크롤 없애기 */
@@ -365,8 +328,15 @@
 .processWrap>.active {
     color: #333;
     font-weight: bold;
-    /* border-bottom: 5px solid #e7c186; */
+/*     border-bottom: 5px solid #e7c186; */
     border-bottom: 5px solid #f1651d;
+}
+
+.processWrapBar>.active {
+	color: #333;
+    font-weight: bold;
+    /* border-bottom: 5px solid #e7c186; */
+    border-bottom: 5px solid #844ff5;
 }
 
 /* - 5.2.4 title 타이틀 공통 */
@@ -412,7 +382,6 @@
 
 .class-searchWrap .class-search-down .cusPHIn.input {
     width: 320px;
-    /* 2020-01-28 height : 30px로 변경 */
     height: 30px;
     line-height: 29px;
     text-indent: 10px;
@@ -420,12 +389,11 @@
 }
 
 .class-searchWrap .class-search-down .button {
-    /* 20-08-31
-    margin : 0 > 5px 10px 5px 0으로 수정
-    border : 1px solid #aaa > none으로 수정 */
     box-shadow: none;
     border: none;
-    margin: 5px 10px 5px 0;
+    /* margin: 5px 10px 5px 0; */
+	top: 5px;
+    right: 40px;
 }
 
 /* - 5.3.2 subPage - searchWrapper 조건선택 필터 */
@@ -437,9 +405,7 @@
     line-height: 30px;
     text-indent: 5px;
     height: 30px;
-    top: 5px;
-    right: 40px;
-
+    margin-right:10px;
 }
 /* - 5.3.5 subPage - sectionOutBtn (섹션 최하단 우측) 버튼 */
 /* section-out-btn : sub05-04/sub06-01-02 */
@@ -470,7 +436,7 @@
 .c-table-num {
     /* width: 50px; */
     width: 5.31%;
-}
+} 
 
 .c-table-name {
     /* width: 440px; */
@@ -478,15 +444,15 @@
 }
 
 .c-table-name-w {
-    /* width: 490px; */
-    width: 52.12%;
+     /* width: 490px; */
+     width: 52.12%;
 }
 
 .c-table-name-wide {
     /* width: 690px; */
     width: 73.40%;
 }
-
+ 
 .c-table-04 {
     /* width: 400px; */
     width: 42.55%;
@@ -494,8 +460,8 @@
 
 .c-table-03 {
     /* width: 300px; */
-    width: 31.91%;
-}
+	width: 31.91%; 
+}	
 
 .c-table-02 {
     /* width: 200px; */
@@ -959,17 +925,18 @@
 }
 
 .eLearning .class-detail {
-    width: 730px;
-    margin: 0 auto;
-    padding: 20px;
+    /* width: 730px;
+    	margin: 0 auto; */
+    padding: 0 20px 20px 20px;
     border: 1px solid #eee;
     overflow: hidden;
 }
 
 .eLearning .class-detail>.c-ttl {
     width: 100%;
-    height: 40px;
+    /* height: 40px; */
     border-bottom: 1px solid #eee;
+    padding : 20px 0;
 }
 
 .eLearning .class-detail>.c-ttl>.class-title-wrap>.filterWrap {
@@ -978,8 +945,7 @@
 }
 
 .eLearning .class-detail>.c-ttl>.class-title-wrap>.fz16 {
-    /* 2020-01-28 margin-left 삭제 */
-    /* margin-left: 20px; */
+    margin-left: 10px;
 }
 
 .eLearning .class-detail>.c-img {
@@ -1020,6 +986,9 @@
     margin: 0;
     margin-left: 10px;
 }
+.eLearning .class-detail>.info-btnWrap>form>a{
+	display: block;
+}
 
 .eLearning .section-class-detail>.class-tabMenu {
     margin-top: 40px;
@@ -1048,7 +1017,7 @@
 }
 
 /* - 6.4.1 sub06-01 고객지원 */
-.sub-content .section.sub06-01-01 {
+.subPage_content .section.sub06-01-01 {
     padding-top: calc(1911 / 980 * 100%);
     background-image: url('../img/sub06-01-01.png');
 }
@@ -1175,11 +1144,15 @@
 }
 
 .refundBox {
-    width: 50px;
-    height: 30px;
+    
     margin: 0 auto;
+    padding : 5px;
+    /* width: 50px;
     line-height: 30px;
-    font-weight: bold;
+    height: 30px;
+    font-weight: bold; */
+    display : inline-block;
+    height : 40px;
 }
 
 .refund-complete
@@ -1383,15 +1356,15 @@
 /* .modal .article-title .btn-bk {
     padding: 0 20px;
     line-height: 30px;
-} */
-
+}
+ */
 .modal-sectionWrap .formStyle {
     width: 100%;
 }
 .modal-sectionWrap .formStyle .input{
 	text-indent : inherit;
 }
-.modal-sectionWrap .formStyle .selsect{
+.modal-sectionWrap .formStyle .select{
 	margin : 0
 }
 /* modal popup layer 수강신청 - 02 환불규정 */
@@ -1444,14 +1417,14 @@
 
 /* - 7.1.2 modal popup layer - Content 2) 나의강의실 */
 .myClass {
-    border: 10px solid #396aa5;
+    border: 10px solid #f1651d;
 }
 
 .myClass>.sub-content {}
 
 .myClass .modal-subGroup.modal-ovflowY {
     width: 100%;
-    height: calc(100% - 200px);
+    height: calc(100% - 120px);
     position: absolute;
     border-left: 3px solid #f4f4f4;
     border-bottom: 3px solid #f4f4f4;
@@ -1466,11 +1439,14 @@
     font-weight: bold;
     font-size: 1.143rem;
     border-radius: 5px;
-    background-color: #11283b;
+    background-color: #fff;
+    color:f1651d;
+    border : 1px solid #f1651d;
 }
 
 .myClass .button-wrap>.btn-myClass:hover {
-    background-color: #2c67b0;
+    background-color: #f1651d;
+    color : #fff;
 }
 
 .class-list-wrap.modal-ovflowY {
@@ -1525,7 +1501,9 @@
 .chart>.right>li {
     margin-left: -80px;
     transform: rotate(0deg);
-    background: linear-gradient(to top, #fcb37e 33%, #fedabf 66%, #fff 100%);
+    /* background: linear-gradient(to top, #a4d9fc 50%, #9bd0f4 70%, #6ea2ce 100%); */
+    /* background: linear-gradient(to top, #fcb37e 33%, #fedabf 66%, #fff 100%); */
+    background: linear-gradient(to top, #fff 33%, #fedabf 66%, #fcb37e 100%);
 }
 
 .chart>.pannel {
@@ -1590,7 +1568,7 @@
 
 .graphWrap>.graphGroup>.graph>.graph {
     height: 20px;
-    background: linear-gradient(to right,  #fedabf 25%, #fcb37e 50%, #fc8e3f 75%, #fc6900 100%);
+    background: linear-gradient(to right, #fedabf 25%, #fcb37e 50%, #fc8e3f 75%, #fc6900 100%);
 }
 
 .graphWrap>.graphGroup>.graph>.graph1 {
@@ -1621,8 +1599,8 @@
 }
 
 .completionWrap>.scoreSum>.scoreWrap {
-    width: 240px;
-    background-color: #f1651d;
+    width: 220px;
+    background-color: #ccc;
     padding: 20px;
 }
 
@@ -1655,7 +1633,7 @@
 /* 2020-03-25 학습현황 끝 */
 /* modal popup layer 나의강의실 - 02 학습하기 */
 .modal-sub07-01 .class-list-title {
-    padding-right: 20px;
+    /* padding-right: 20px; */
 }
 
 .tab-sub.sub02 .class-list-wrap.modal-ovflowY {
@@ -1678,8 +1656,8 @@
     background-position: -90px -80px;
 } */
 .class-tabMenu .class-list .btn-study {
-    width: 80px;
-    padding: 0 10px;
+    /* width: 80px; */
+    padding: 5px 10px;
 }
 
 /* 설문조사 */
@@ -1909,6 +1887,7 @@
 .table-receipt .thead {
     line-height: 40px;
     text-align: center;
+    border: 1px solid #ccc;
 }
 
 .table-receipt .tbody * {
@@ -1956,15 +1935,12 @@
     width: 10%;
 }
 
-.positionImg {
-    /* 2020-01-28 positionImg 도장 이미지 수정 */
+.positionImg>img {
     position: absolute;
     top: 60px;
     right: 10px;
     width: 80px;
     height: 80px;
-    background-image: url('../img/stamp.png');
-    background-size: cover;
     opacity: 0.3;
 }
 

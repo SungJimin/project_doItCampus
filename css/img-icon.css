@@ -279,8 +279,14 @@ background-position: -180px 0;
   >> 2020_lms_html
 ----------------------------------------------------------------*/
 .scrollToTop{
+	/* Doitcampus */
     width: 40px; height: 40px;
     background-position: -880px -20px;
+}
+.scrollToTop_RB{
+    width: 40px;
+    height: 40px;
+    background-position: -920px -20px;
 }
 /* user_01_resumeForm */
 .question-circle{background-position: 0 -140px;}
@@ -397,4 +403,45 @@ background-position: -180px 0;
 }
 .sort-down-wh {
     background-position: 0 -160px;
+}
+
+/*--------------------------------------------------------------
+  >> 2020_SES_html
+----------------------------------------------------------------*/
+.chevron-left999,
+.chevron-rightt999{
+    width: 20px;
+    height: 40px;
+}
+.chevron-left999{
+    background-position: -140px -100px;
+}
+.chevron-rightt999{
+    background-position: -160px -100px;
+}
+.bars-2line{
+    width: 40px;
+    height: 20px;
+    background-position: -180px -100px;
+}
+.link-arrow{
+    width: 110px;
+    background-position: -180px -120px;
+}
+
+/*--------------------------------------------------------------
+  >> 2020_rainbow
+----------------------------------------------------------------*/
+.chevron-left_pp,
+.chevron-right_pp{
+    width: 20px;
+    height: 40px;
+}
+.chevron-left_pp{background-position: -340px -100px;}
+.chevron-right_pp{background-position: -360px -100px;}
+
+.times-large-wh{
+    width: 40px;
+    height: 40px;
+    background-position: -300px -100px;
 }

@@ -1,84 +1,16 @@
 // common.js
+$(document).ready(function () {
+
+    // include html
+    $(".load-html").each(function () {
+        $(this).load(this.dataset.source);
+    });
+    
+});
+
 $(function() {
-    // 반응형
-    var responsive480 = window.matchMedia("screen and (max-width : 480px)"),
-        responsive1024 = window.matchMedia("screen and (max-width : 1024px)");
-
-    //기기의 너비가 480px 이하시 작동하는 기능
-    if (responsive480.matches) {
-        //(모바일) 탭 타이틀 2줄 넘어갈 때 개별 스타일 지정
-        var tabHeight = $('.calss-tabMenu .tabGroup>li').height();
-        //(모바일) 탭 타이틀 2줄 넘어갈 때 개별 스타일 지정 끝
-
-    };
-
-    if (responsive1024.matches) {
-        //기기의 너비가 1024px 이하시 작동하는 기능
-
-        // 모바일 네비 >> ▤ 클릭 기능
-        $(".mobile-headerWrap .bars").on("click", function() {
-            var mobileNav = $('.mobile-headerWrap .m-navBg').css("display");
-            $(".mobile-headerWrap .m-navBg").slideToggle();
-
-            if (mobileNav == "none") {
-                //not-scroll : 모바일 네비 활성화시 background 스크롤 금지
-                $('html, body').addClass("not-scroll");
-
-                $('.mobile-header>.nav-menu>.bars').attr('class', 'img-icon times');
-
-                // 풀메뉴 제외한 나머지 영역(BackGround)클릭시 메뉴 닫기
-                $('.mobile-headerWrap>.m-navBg').click(function(e) {
-                    if (!$('.mobile-headerWrap .m-navBg').has(e.target).length) {
-                        $('html, body').removeClass("not-scroll");
-                        $('.mobile-headerWrap .m-navBg').hide();
-                        $('.mobile-header>.nav-menu>.times').attr('class', 'img-icon bars');
-                    }
-                });
-            } else if (mobileNav == "block") {
-                $('html, body').removeClass("not-scroll");
-                // console.log('풀메뉴닫기');
-                $('.mobile-header>.nav-menu>.times').attr('class', 'img-icon bars');
-            }
-        });
-        // 모바일 네비 >> ▤ 클릭 기능 끝
-
-        //모바일 네비 >> 아코디언 메뉴 (중분류 메뉴 클릭시 소분류 메뉴 up and down)
-        // 20-08-31 $('.m-navGroup .lnb').on('click',function(){...}); 수정
-        $('.m-navGroup .lnb').on('click',function(){
-            var mobileSubMenu = $(this).find('.menu-sub').css("display");
-            if(mobileSubMenu == "none"){
-                $('.menu-sub').hide().prev('.angle-right').attr('class','img-icon angle-down');
-                $(this).find('.menu-sub').slideDown();
-                $(this).find('.angle-down').attr('class','img-icon angle-right');
-        } else if(mobileSubMenu == "block"){
-            $(this).children('.menu-sub').hide();
-            $(this).find('.angle-right').attr('class','img-icon angle-down');
-        }
-        });
-        //모바일 네비 >> 아코디언 메뉴 (중분류 메뉴 클릭시 소분류 메뉴 up and down) 끝
-
-        //모바일 네비 >> user UI 클릭 기능
-        $('.mobile-headerWrap .user').on('click', function() {
-            $(this).parents('.mobile-header').next('.mobile-hdr-loginWrap').slideToggle();
-        });
-        //모바일 네비 >> user UI 클릭 기능 끝
-
-        // 네비(header) 스크롤시 최상단 고정 + TopButton 스크롤탑
-        $(window).scroll(function() {
-            var scroll = $(this).scrollTop();
-            //모바일 네비(header) 스크롤시 최상단에 고정
-            if (scroll > 40) {
-                $('.mobile-headerWrap').addClass('mobile-headerWrap-fixed');
-            } else {
-                $('.mobile-headerWrap').removeClass('mobile-headerWrap-fixed');
-            };
-            //모바일 네비(header) 스크롤시 최상단에 고정 끝
-
-        });
-        // 네비(header) 스크롤시 최상단 고정 + TopButton 스크롤탑 끝
-    };
-    //기기의 너비가 1024px 이하시 작동하는 기능 끝
-
+   
+    
     //20-08-18 탑 배너 회사소개 slideDown >> 태블릿전용 탑배너 회사소개 삭제
     // var getHeight = $('.top-bannerWrap').css("height");
     //기기 너비에 따라 높이값이 변경되므로 속성값 가져와 스타일 지정하기
@@ -171,61 +103,6 @@ $(function() {
 
     // 공지 슬라이드 기능 끝
 
-    //topButton 스크롤탑
-    $(window).scroll(function() {
-        var scroll = $(this).scrollTop();
-
-        if (scroll > 200) {
-            $('.top-btn').fadeIn();
-        } else {
-            $('.top-btn').fadeOut();
-        }
-
-    });
-
-    $('.top-btn').click(function() {
-        $('html, body').animate({
-            scrollTop: 0
-        }, 100);
-        return false;
-    });
-    //topButton 스크롤탑 끝
-
-    //PC 네비 마우스오버시 메뉴 드롭 기능
-    var $nav = $('.navGroup>li');
-    var $gnb = $('.navGroup .gnb');
-    var $lnb = $('.navGroup .lnb');
-
-    $nav.on("mouseenter", function() {
-        var dp = $(this).children().next().css('display');
-        if (dp == 'none') {
-            $lnb.hide();
-            $(this).children().next().slideDown();
-        }
-    });
-    $nav.on("mouseleave", function() {
-        $lnb.hide();
-    });
-    //PC 네비 마우스오버시 메뉴 드롭 기능 끝
-
-    //PC 네비 전체메뉴보기 기능
-    $(".btn-toggle").on("click", function() {
-        var fullWrapper = $('.fullWrapper').css("display");
-        // console.log(fullWrapper);
-        $(".fullWrapper").slideToggle();
-        if (fullWrapper == "none") {
-            // console.log('풀메뉴실행');
-            $('.btn-toggle>.bars').attr('class', 'img-icon times');
-            $('.hide-show-txt').text('전체 메뉴 닫기');
-        } else if (fullWrapper == "block") {
-            // console.log('풀메뉴닫기');
-            $('.btn-toggle>.times').attr('class', 'img-icon bars');
-            $('.hide-show-txt').text('전체 메뉴 보기');
-            //    if(!$('.fullWrapper').has(e.target).length) {
-            //     $(".fullWrapper").hide();
-            // }
-        }
-    });
 
     // 소메뉴 hover시 중메뉴에 style적용
     $('.menu-title-division .menu-sub li').on("mouseenter",function(){
@@ -237,9 +114,6 @@ $(function() {
         $(this).parent('.menu-sub').parent('.lnb').removeClass('lnb-hover2');
     });
     // 소메뉴 hover시 중메뉴에 style적용 끝
-
-    //PC 네비 전체메뉴보기 기능 끝
-
 
 
     //서브페이지 탭 ( 과정정보탭 /소메뉴탭 )
