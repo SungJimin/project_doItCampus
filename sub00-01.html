@@ -20,16 +20,19 @@
     <link rel="stylesheet" href="css/renewal_style.css">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/swiper.js"></script>
+    <script src="js/common.js"></script>
     <script src="js/renewal_script.js"></script>
 </head>
 
 <body>
     <!-- Header include -->
-    <? include 'include/header_sub.html' ?>
+    <!-- <? include 'include/header_sub.html' ?> -->
+    <div class="load-html" data-source="include/header_sub.html"></div>
 
     <!-- container -->
     <div class="container subPage_container sub00 d-flex">
-        <? include 'include/sub00.html' ?>
+        <!-- <? include 'include/sub00.html' ?> -->
+        <div class="load-html" data-source="include/sub00.html"></div>
 
         <div class="subPage_content sub-content margin-left20" id="main">
             <div class="section userInfo sub00-01">
@@ -67,7 +70,8 @@
     </div>
 
     <!-- footer-include -->
-    <? include 'include/footer.html' ?>
+    <!-- <? include 'include/footer.html' ?> -->
+    <div class="load-html" data-source="include/footer.html"></div>
 
 </body>
 

@@ -9,7 +9,8 @@
     <!-- 홈페이지의 대략적인 설명 >> 검색 결과 제목 하단에 설명으로 노출 -->
     <meta name="description" content=디지털·AI, 외국어, 직무, 자격증까지! Let's Do it! Do it campus!">
     <!-- 홈페이지 키워드 >> 키워드 검색했을 때 검색결과로 노출 -->
-    <meta name="keywords" content="디지털, AI, 빅데이터, 프로그래밍, 정보처리, 데이터베이스, 클라우드, 외국어, 영어, 일본어, 중국어, 직무, 경영, 사업전략, 리더십, 코칭, 마케팅, CS, 자기관리, 커뮤니케이션, 법정의무, 취업, 해외취업, Soft Engineer Society, SES, 소프트엔지니어소사이어티, SCIT, SWDO, E러닝, e-learning">
+    <meta name="keywords"
+        content="디지털, AI, 빅데이터, 프로그래밍, 정보처리, 데이터베이스, 클라우드, 외국어, 영어, 일본어, 중국어, 직무, 경영, 사업전략, 리더십, 코칭, 마케팅, CS, 자기관리, 커뮤니케이션, 법정의무, 취업, 해외취업, Soft Engineer Society, SES, 소프트엔지니어소사이어티, SCIT, SWDO, E러닝, e-learning">
     <title>Let's Do it 두잇캠퍼스</title>
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/reset.css">
@@ -22,7 +23,8 @@
     <script src="js/swiper.js"></script>
     <script src="js/common.js"></script>
     <script src="js/renewal_script.js"></script>
-    
+    <script src="js/courseData.js"></script>
+
 </head>
 
 <body>
@@ -548,6 +550,72 @@
         <!-- <? include 'include/footer.html' ?> -->
         <div class="load-html" data-source="include/footer.html"></div>
 
+        <script>
+            const array_it = [{
+                titleDiv: 'e러닝',
+                title: '[HD]인공지능(AI) 프로그래밍 - Machine Learning(머신러닝) 기초(파이썬 라이브러리 numpy, pandas)',
+                price: '40,000'
+            },{
+                titleDiv: 'e러닝',
+                title: '파이썬 기초부터 활용까지',
+                price: '145,000'
+            },{
+                titleDiv: 'e러닝',
+                title: '스프링부트 2.0(스프링 5.0)으로 작성하는 RESTful API 서비스',
+                price: '126,000'
+            },{
+                titleDiv: 'e러닝',
+                title: '[HD]쉽게 배우는 Python 알고리즘 입문',
+                price: '44,000'
+            },{
+                titleDiv: 'e러닝',
+                title: '파이썬을 활용한 데이터 분석 및 시각화',
+                price: '138,000'
+            },{
+                titleDiv: 'e러닝',
+                title: '도커(Docker)로 시작하는 가상화&클라우드 컴퓨팅',
+                price: '125,000'
+            },{
+                titleDiv: 'e러닝',
+                title: 'AWS로 시작하는 클라우드 컴퓨팅',
+                price: '125,000'
+            },{
+                titleDiv: 'e러닝',
+                title: '실전! 클라우드 개발을 위한 가상화 & Docker 정복하기',
+                price: '116,000'
+            },{
+                titleDiv: 'e러닝',
+                title: '머신러닝의 이해와 실습',
+                price: '148,000'
+            }]
+            
+            for (var i = 0; i < array_it.length; i++) {
+                console.log(array_it[i].title)
+
+                const classCard = document.createElement("div");
+                classCard.setAttribute('class', 'swiper-slide class-card');
+                document.body.appendChild(classCard);
+
+                const classSegment = document.createElement("div");
+                classSegment.setAttribute('class', 'class-seg');
+                classCard.appendChild(classSegment);
+
+                const classTitle = document.createElement("div");
+                classTitle.setAttribute('class', 'class-title');
+                classSegment.appendChild(classTitle);
+                classTitle.innerText = array_it[i].title;
+
+                const classTitleDiv = document.createElement("span");
+                classTitleDiv.setAttribute('class', 'fc_999');
+                classTitle.prepend(classTitleDiv);
+                classTitleDiv.innerText = array_it[i].titleDiv + "\u00a0";
+    
+                const classPrice = document.createElement("div");
+                classPrice.setAttribute('class', 'class-info')
+                classSegment.appendChild(classPrice);
+                classPrice.innerText = array_it[i].price + '원';
+            }
+        </script>
 </body>
 
 </html>
